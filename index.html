@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <img class="logo" src="/image/Frame.svg" alt="logo" />
+          <div class="nav">
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Этапы</a>
+            <a href="#">Дизайнеры</a>
+          </div>
+          <!-- Button to mobile menu---- -->
+          <img
+            src="/image/iPhone 11 Pro/MobileButton.svg"
+            onclick="myFunction()"
+            class="dropbtn"
+          />
+          <!-- ------------------- ---  -->
+          <button class="button-header" href="#">Заказать</button>
+        </div>
+        <!-- Mobile Menu ------------------->
+        <div class="dropdown">
+          <!-- <img
+            src="/image/iPhone 11 Pro/MobileButton.svg"
+            onclick="myFunction()"
+            class="dropbtn"
+          /> -->
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Услуги</a>
+          <a href="#">Портфолио</a>
+          <a href="#">Этапы</a>
+          <a href="#">Дизайнеры</a>
+        </div>
+        <!-- ---------------------------- -->
+      </div>
+      <section class="offer">
+        <div class="container">
+          <h1>
+            Разработка<br />
+            интернет-магазина <br />с нуля за неделю
+          </h1>
+          <p class="offer-text">
+            Дизайн интернет магазина, элементов микро UX,<br />
+            корзин, личного кабинета - от фирменного стиля<br />
+            до пользовательского интерфейса в сжатые сроки<br />
+            с командой Virtual Designers
+          </p>
+          <button class="button-offer" href="#">Заказать</button>
+        </div>
+      </section>
+    </header>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.header-wrapper {
+  display: flex;
+  width: 100%;
+  height: 95px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 95px;
+  background-color: #67aefc;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  padding: 0;
+  top: 0;
+}
+header a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-left: 35px;
+}
+.nav {
+  margin-left: auto;
+}
+.button-header {
+  width: 170px;
+  height: 37.78px;
+  background-color: #75e169;
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button-header:hover {
+  border-color: #ffffff;
+  border: 3px solid;
+}
+.button-header:active {
+  background-color: #ffffff;
+  color: #67aefc;
+  border: none;
+}
+/* Mobile Menu --------------------------*/
+.dropbtn {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: none;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  transform: scale(1.1);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  background-color: #67aefc;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #67aefc;
+  text-decoration: underline;
+}
+
+.show {
+  display: block;
+}
+/* ------------------------------------- */
+/* Offer Section ------------------------*/
+.offer {
+  border: 1px solid;
+  height: 765px;
+  background: url("/image/bg-img-l.png") 0 0 / auto 100% no-repeat,
+    url("/image/bg-img-r.png") 100% 45% no-repeat;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 125%;
+  color: #484848;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 170px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.offer-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.button-offer {
+  width: 270px;
+  height: 60px;
+  background: #75e169;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 60px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button-offer:hover {
+  border: 2px solid;
+  border-color: #67aefc;
+}
+.button-offer:active {
+  background: #67aefc;
+  color: #fff;
+}
+/* --------------------------------- ----*/
+@media (max-width: 950px) {
+  .nav a {
+    display: none;
+  }
+  .dropbtn {
+    display: block;
+  }
+  .header-wrapper {
+    gap: 30px;
+  }
+}
