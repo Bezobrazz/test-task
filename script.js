@@ -34,3 +34,23 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Slideshow------------------------------
+let offset = 0;
+const sliderContainer = document.querySelector(".slideshow-container");
+
+document.querySelector(".next").addEventListener("click", function(){
+	offset += 700;
+		if (offset > 3475){
+			offset  = 0;
+		}
+	sliderContainer.style.left = -offset + "px";
+});
+
+document.querySelector(".prev").addEventListener("click", function(){
+	offset -= 700;
+		if (offset < 0){
+			offset  = 3475;
+		}
+	sliderContainer.style.left = -offset + "px";
+});
