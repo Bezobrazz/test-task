@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
+html body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -293,7 +293,7 @@ h1 {
   padding-left: 75px;
   padding-right: 10px;
 }
-.h3-slideshow {
+h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -313,7 +313,7 @@ h1 {
 }
 .slideshow-btn {
   margin-top: 85px;
-  margin-bottom: 130px;
+  padding-bottom: 130px;
   text-align: center;
 }
 .prev {
@@ -323,6 +323,215 @@ h1 {
   content: url(/image/btn-next.svg);
 }
 /* -------------------------------------- */
+
+/* Online-shop-example--------------------*/
+.online-shop {
+  width: 100%;
+  height: 100%;
+  background: url("/image/shope-wave.242.png") 10% 23% no-repeat,
+    url("/image/shop-sphere.269.png") 84% 91% no-repeat;
+  background-color: #daecff;
+}
+.online-shop-wrapper {
+  display: grid;
+  /* grid-template-columns: 570px 570px; */
+  grid-template-columns: repeat(auto-fill, 570px);
+  gap: 40px 30px;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+.image-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #67aefc;
+  border-radius: 15px;
+  text-align: center;
+}
+.overlay h3 {
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 210px;
+}
+.overlay p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+/* --------------------------------------- */
+
+/* Information Section -----------------*/
+.information {
+  width: 100%;
+  height: 100%;
+  background: url(/image/inform-sphere.267.png) 8% 28% no-repeat,
+    url(/image/inform-Orders.png) 92% 70% no-repeat;
+}
+.h2-information {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  color: #111111;
+  padding-top: 215px;
+}
+.information p {
+  width: 50%;
+}
+.button-information {
+  width: 270px;
+  height: 60px;
+  background: #75e169;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 60px;
+  margin-bottom: 180px;
+}
+.button-information:hover {
+  border: 2px solid;
+  border-color: #67aefc;
+}
+.button-information:active {
+  background: #67aefc;
+  color: #fff;
+}
+/* ---------------------------------------- */
+/* Form Section -----------------------*/
+.form-section {
+  width: 100%;
+  height: 100%;
+  background: url(/image/form-phone\ call.243.png) 12% 86% no-repeat,
+    url(/image/form-Group\ 175.png) 80% 40% no-repeat;
+  background-color: #daecff;
+  text-align: center;
+  margin: 0 auto;
+}
+.form-section h2 {
+  padding-top: 180px;
+  padding-bottom: 25px;
+}
+.form-section p {
+  padding-bottom: 30px;
+}
+.form-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.input {
+  width: 470px;
+  height: 58px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #6eb1fb;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #939393;
+  padding-left: 14px;
+}
+.button-form {
+  width: 270px;
+  height: 60px;
+  background: #75e169;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+.button-form:hover {
+  border: 2px solid;
+  border-color: #67aefc;
+}
+.button-form:active {
+  background: #67aefc;
+  color: #fff;
+}
+/* ----------------------------------- */
+/* Footer -----------------------------*/
+footer {
+  background: #64abf9;
+}
+.footer-logo {
+  width: 280px;
+  height: 66px;
+  margin-bottom: 45px;
+}
+footer img {
+  margin-right: 38px;
+}
+.footer-wrapper {
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 120px;
+}
+.footer-tel a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-tel a::before {
+  content: url(/image/fa-brands_viber.png);
+  margin-right: 5px;
+  position: relative;
+  top: 8px;
+}
+.footer-email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-text {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #ffffff;
+}
+
+/* ----------------------------------- */
 @media (max-width: 1750px) {
   .section-accordion {
     background: #daecff;
