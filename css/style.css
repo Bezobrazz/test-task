@@ -9,7 +9,7 @@ html body {
 .container {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 0px 15px;
+  padding: 0px 20px;
 }
 .header-wrapper {
   display: flex;
@@ -43,6 +43,7 @@ header a {
   margin-left: auto;
 }
 .button-header {
+  display: block;
   width: 170px;
   height: 37.78px;
   background-color: #75e169;
@@ -82,8 +83,10 @@ header a {
   display: none;
   background-color: #67aefc;
   min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  position: absolute;
+  top: 94px;
+  left: 0;
 }
 .dropdown-content a {
   color: white;
@@ -92,6 +95,9 @@ header a {
   text-transform: uppercase;
   text-align: center;
   display: block;
+  margin-left: 0;
+  margin-bottom: 50px;
+  margin-top: 45px;
 }
 .dropdown-content a:hover {
   background-color: #67aefc;
@@ -314,13 +320,21 @@ h3 {
 .slideshow-btn {
   margin-top: 85px;
   padding-bottom: 130px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .prev {
-  content: url(/image/btn-prev.png);
+  content: url(/image/btn-prev.svg);
 }
 .next {
   content: url(/image/btn-next.svg);
+}
+.prev:active {
+  content: url(/image/btn-prev-active.svg);
+}
+.next:active {
+  content: url(/image/btn-next-active.svg);
 }
 /* -------------------------------------- */
 
@@ -339,6 +353,16 @@ h3 {
   gap: 40px 30px;
   justify-content: center;
   padding-bottom: 120px;
+}
+.h2-shop {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: #111111;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 .image-container {
   position: relative;
@@ -453,6 +477,9 @@ h3 {
   color: #939393;
   padding-left: 14px;
 }
+input:focus::placeholder {
+  color: #292929;
+}
 .button-form {
   width: 270px;
   height: 60px;
@@ -475,6 +502,7 @@ h3 {
   color: #fff;
 }
 /* ----------------------------------- */
+
 /* Footer -----------------------------*/
 footer {
   background: #64abf9;
@@ -548,3 +576,131 @@ footer img {
     gap: 30px;
   }
 }
+/* Iphone 11 pro ----------------------*/
+@media (max-width: 375px) {
+  .button-header {
+    display: none;
+  }
+  .logo {
+    width: 136px;
+    height: 35px;
+  }
+  .offer {
+    display: inline-block;
+    height: 100%;
+    background: url("/image/iPhone\ 11\ Pro/mobile-bg.png") 0 0 / contain
+      no-repeat;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 140px;
+    margin-bottom: 0;
+    padding-top: 170px;
+  }
+  .button-offer {
+    width: 335px;
+    height: 60px;
+    background: #75e169;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .button-offer:hover {
+    border: 2px solid;
+    border-color: #67aefc;
+  }
+  .button-offer:active {
+    background: #67aefc;
+    color: #fff;
+  }
+  .h2 {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 150%;
+    text-align: center;
+    color: #111111;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  .accordion {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+  }
+  .accordion::before {
+    content: url(/image/accordion-dot.svg);
+    top: -2px;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 10px;
+    left: -15px;
+    width: 15px;
+    height: 15px;
+  }
+  .accordion::after {
+    content: url(/image/ChevronDown.svg);
+    font-size: 13px;
+    color: #777;
+    float: right;
+    position: relative;
+    padding-right: 15px;
+    top: 8px;
+  }
+  .accordeon-1::after {
+    padding-left: 83px;
+  }
+  .accordeon-5::after {
+    padding-left: 130px;
+  }
+  .line {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .section-accordion p {
+    font-size: 17px;
+    margin-right: 40px;
+  }
+  .active::before {
+    content: url(/image/accordion-dot-blue.svg);
+  }
+  .active::after {
+    content: url(/image/ChevronUp.svg);
+  }
+
+  /* Slider---------------------- */
+  .slider {
+    height: 615px;
+  }
+  .slideshow-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+  }
+  .mySlides {
+    flex-direction: column;
+    width: 335px;
+    height: 620px;
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+  .input {
+    width: 335px;
+  }
+  /* ------------------------------- */
+}
+
+/* ----------------------------- */

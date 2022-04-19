@@ -1,4 +1,6 @@
 "use strict";
+
+// Burger menu-------------------------
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -41,7 +43,7 @@ const sliderContainer = document.querySelector(".slideshow-container");
 
 document.querySelector(".next").addEventListener("click", function(){
 	offset += 700;
-		if (offset > 3475){
+		if (offset > 2800){
 			offset  = 0;
 		}
 	sliderContainer.style.left = -offset + "px";
@@ -50,7 +52,8 @@ document.querySelector(".next").addEventListener("click", function(){
 document.querySelector(".prev").addEventListener("click", function(){
 	offset -= 700;
 		if (offset < 0){
-			offset  = 3475;
+			offset  = 2800;
 		}
 	sliderContainer.style.left = -offset + "px";
 });
+
