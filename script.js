@@ -38,6 +38,29 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // Slideshow------------------------------
+// let offset = 0;
+// const sliderContainer = document.querySelector(".slideshow-container");
+
+// document.querySelector(".next").addEventListener("click", function(){
+// 	offset += 700;
+// 		if (offset > 2800){
+// 			offset  = 0;
+// 		}
+// 	sliderContainer.style.left = -offset + "px";
+// });
+
+// document.querySelector(".prev").addEventListener("click", function(){
+// 	offset -= 700;
+// 		if (offset < 0){
+// 			offset  = 2800;
+// 		}
+// 	sliderContainer.style.left = -offset + "px";
+// });
+
+var mediaQuery = window.matchMedia('(min-width: 500px)');
+
+if (mediaQuery.matches) {
+  // я выполнюсь только если ширина экрана 500 или больше
 let offset = 0;
 const sliderContainer = document.querySelector(".slideshow-container");
 
@@ -56,4 +79,50 @@ document.querySelector(".prev").addEventListener("click", function(){
 		}
 	sliderContainer.style.left = -offset + "px";
 });
+}
 
+
+var mediaQuery = window.matchMedia('(max-width: 380px)');
+
+if (mediaQuery.matches) {
+  // я выполнюсь только если ширина экрана 380 или меньше
+
+		let offset = 0;
+const sliderContainer = document.querySelector(".slideshow-container");
+
+document.querySelector(".next").addEventListener("click", function(){
+	offset += 360;
+		if (offset > 1675){
+			offset  = 0;
+		}
+	sliderContainer.style.left = -offset + "px";
+});
+
+document.querySelector(".prev").addEventListener("click", function(){
+	offset -= 360;
+		if (offset < 0){
+			offset  = 1675;
+		}
+	sliderContainer.style.left = -offset + "px";
+});
+}
+
+// Shop slider-----------------------------------
+let offset = 0;
+const sliderShop = document.querySelector(".online-shop-wrapper");
+
+document.querySelector(".shop-next").addEventListener("click", function(){
+	offset += 350;
+		if (offset > 350){
+			offset  = 0;
+		}
+	sliderShop.style.left = -offset + "px";
+});
+
+document.querySelector(".shop-prev").addEventListener("click", function(){
+	offset -= 350;
+		if (offset < 0){
+			offset  = 350;
+		}
+	sliderShop.style.left = -offset + "px";
+});
