@@ -398,6 +398,12 @@ h3 {
 .image-container:hover .overlay {
   opacity: 1;
 }
+.shop-flex-1,
+.shop-flex-2 {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
 .shop-slideshow-btn {
   display: none;
 }
@@ -567,6 +573,58 @@ footer img {
     background: #daecff;
   }
 }
+@media (max-width: 1440px) {
+  .offer {
+    background: url(/image/bg-img-l.png) 0 0 / auto 100% no-repeat,
+      url(/image/bg-img-r.png) 125% 66% no-repeat;
+  }
+  h1 {
+    font-size: 47px;
+  }
+  .online-shop {
+    background: none;
+    background-color: #daecff;
+  }
+}
+@media (max-width: 1300px) {
+  .offer {
+    background: url(/image/bg-img-l.png) 0 0 / auto 100% no-repeat,
+      url(/image/bg-img-r.png) 150% 66% no-repeat;
+  }
+  .information {
+    background: url(/image/inform-sphere.267.png) 8% 20% no-repeat,
+      url(/image/inform-Orders.png) 110% 70% no-repeat;
+  }
+  .form-section {
+    background: url(/image/form-phone\ call.243.png) 1% 86% no-repeat,
+      url(/image/form-Group\ 175.png) 92% 40% no-repeat;
+    background-color: #daecff;
+  }
+}
+@media (max-width: 1200px) {
+  .offer {
+    background: url(/image/bg-img-r.png) 225% 0 / auto 100% no-repeat;
+  }
+}
+@media (max-width: 1030px) {
+  .offer {
+    background: url(/image/bg-img-r.png) 500% 0 / auto 100% no-repeat;
+  }
+  h1 {
+    padding-top: 195px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .information p {
+    width: 44%;
+  }
+}
+@media (max-width: 975px) {
+  .offer {
+    background: url(/image/bg-img-r.png) 0 0 / auto 100% no-repeat;
+  }
+}
 @media (max-width: 950px) {
   .nav a {
     display: none;
@@ -577,7 +635,269 @@ footer img {
   .header-wrapper {
     gap: 30px;
   }
+  /* Form Section------------------------ */
+  .form-section {
+    background: none;
+    background-color: #daecff;
+  }
+  .form-section h2 {
+    font-size: 23px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+  .form-section p {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .button-form {
+    width: 470px;
+    margin-top: 20px;
+  }
 }
+@media (max-width: 768px) {
+  .button-header {
+    display: none;
+  }
+  .logo {
+    width: 136px;
+    height: 35px;
+  }
+  .offer {
+    /* display: inline-block; */
+    height: 100%;
+    background: url(/image/Cart.svg) 12px 4px no-repeat;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+    color: #000;
+    text-transform: uppercase;
+    /* margin-top: 140px; */
+    margin-bottom: 0;
+    padding-top: 445px;
+  }
+  .button-offer {
+    width: 335px;
+    height: 60px;
+    background: #75e169;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .button-offer:hover {
+    border: 2px solid;
+    border-color: #67aefc;
+  }
+  .button-offer:active {
+    background: #67aefc;
+    color: #fff;
+  }
+  /* Slideshow Section---------------------- */
+  .slideshow {
+    background: url(/image/slide\ sphere.269.png) -9% 2% no-repeat;
+  }
+  .h2 {
+    padding-top: 45px;
+    padding-bottom: 5px;
+  }
+  .slider {
+    height: 615px;
+    width: 335px;
+  }
+  .slideshow-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+  }
+  .mySlides {
+    flex-direction: column;
+    width: 335px;
+    height: 620px;
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+  .slideshow-btn {
+    gap: 105px;
+    margin-top: 30px;
+    padding-bottom: 55px;
+  }
+  .input {
+    width: 335px;
+  }
+  /* -------------------------------
+
+  /* Shop Slider --------------------*/
+  .online-shop {
+    background: #daecff;
+  }
+  .h2-shop {
+    font-size: 23px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .shop-slideshow-btn {
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .shop-prev {
+    content: url(/image/btn-prev.svg);
+  }
+  .shop-next {
+    content: url(/image/btn-next.svg);
+  }
+  .shop-prev:active {
+    content: url(/image/btn-prev-active.svg);
+  }
+  .shop-next:active {
+    content: url(/image/btn-next-active.svg);
+  }
+  .shop-slider {
+    width: 335px;
+    height: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .online-shop-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    position: relative;
+    transition: all ease 1s;
+  }
+  .grid-example {
+    width: 335px;
+  }
+
+  .overlay h3 {
+    padding-top: 125px;
+  }
+  .shop-flex-1,
+  .shop-flex-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Information Section---------------------- */
+  .information {
+    background: none;
+  }
+  .h2-information {
+    font-size: 23px;
+    padding-top: 45px;
+    text-align: center;
+  }
+  .h2-information::before {
+    content: url(/image/shape\ sphere.269.png);
+    position: relative;
+    top: -74px;
+    left: 264px;
+  }
+  .h2-information::after {
+    content: url(/image/information-mobile.png);
+    position: relative;
+    top: 30px;
+  }
+  .information p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 175%;
+    color: #111111;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .button-information {
+    width: 334px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .btn-info {
+    text-align: center;
+  }
+  /* -------------------------------------- */
+
+  /* Form section -----------------------*/
+  .button-form {
+    width: 335px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 585px) {
+  .offer-text {
+    font-size: 14px;
+  }
+  .h2 {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 150%;
+    text-align: center;
+    color: #111111;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  .accordion {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .accordion::before {
+    content: url(/image/accordion-dot.svg);
+    top: -2px;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 10px;
+    left: -15px;
+    width: 15px;
+    height: 15px;
+  }
+  .accordion::after {
+    content: url(/image/ChevronDown.svg);
+    font-size: 13px;
+    color: #777;
+    float: right;
+    position: relative;
+    padding-right: 15px;
+    top: 8px;
+  }
+  .accordeon-1::after {
+    padding-left: 83px;
+  }
+  .accordeon-5::after {
+    padding-left: 130px;
+  }
+  .line {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .section-accordion p {
+    font-size: 17px;
+    margin-right: 40px;
+  }
+  .active::before {
+    content: url(/image/accordion-dot-blue.svg);
+  }
+  .active::after {
+    content: url(/image/ChevronUp.svg);
+  }
+}
+
 /* Iphone 11 pro ----------------------*/
 @media (max-width: 375px) {
   .button-header {
@@ -603,6 +923,9 @@ footer img {
     margin-top: 140px;
     margin-bottom: 0;
     padding-top: 170px;
+  }
+  .offer-text {
+    font-size: 12px;
   }
   .button-offer {
     width: 335px;
@@ -711,9 +1034,7 @@ footer img {
     margin-top: 30px;
     padding-bottom: 55px;
   }
-  .input {
-    width: 335px;
-  }
+
   /* ------------------------------- */
 
   /* Shop Slider --------------------*/
@@ -800,7 +1121,7 @@ footer img {
     padding-top: 30px;
   }
   .button-information {
-    width: 334px;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 50px;
   }
@@ -820,8 +1141,12 @@ footer img {
     margin-top: 0;
     padding-bottom: 20px;
   }
+  .input {
+    width: 100%;
+  }
+
   .button-form {
-    width: 335px;
+    width: 100%;
     margin-top: 20px;
   }
   form::after {

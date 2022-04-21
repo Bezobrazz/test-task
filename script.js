@@ -82,10 +82,10 @@ document.querySelector(".prev").addEventListener("click", function(){
 }
 
 
-var mediaQuery = window.matchMedia('(max-width: 380px)');
+var mediaQuery = window.matchMedia('(max-width: 768px)');
 
 if (mediaQuery.matches) {
-  // я выполнюсь только если ширина экрана 380 или меньше
+  // я выполнюсь только если ширина экрана 380 (768) или меньше
 
 		let offset = 0;
 const sliderContainer = document.querySelector(".slideshow-container");
